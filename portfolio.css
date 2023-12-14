@@ -1,0 +1,133 @@
+*{
+    font-family: 'popins', sans-serif;
+    box-sizing: border-box;
+}
+.background{
+    
+    display: flex;
+    position: absolute;
+    transform: translateX(-550px);
+    z-index: -1;
+    top: -280px;
+    left: -300px;
+    transform: scale(0.60) ;
+}
+.Tag_ a{
+    padding: 50px;
+}
+.container{
+    display: flex;
+    align-content: center;
+    gap: 10px 20px;
+    background-color:#262626;
+    width: 100vw;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+   
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.toolbar{
+    display: flex;
+}
+
+.container div a::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: lightblue;
+    position:absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.container div a:hover::after{
+    width: 100%;
+}
+.container a{
+    text-decoration: none;
+    color: #fff;
+}
+.content{
+    display: flex;
+    gap: 30vw;
+    font-size: large;
+    margin-top: 20vh;
+}
+.content_1{
+    flex-basis: 30%;
+    margin-left: 10vh;
+}
+
+.content_2{
+    flex-basis: 30%;
+}
+.content_1 h1{
+    font-size: 66px;
+   font-weight: 200;
+}
+.content_2 h1{
+    font-size: 66px;
+    font-weight: 200;
+}
+.tail{
+    background-color:rgba(0,0,0,0.05) ;
+    display: inline-block;
+    width: 100vw;
+    height: 300px;  
+    z-index: 2;
+    margin-top: 100px; 
+    justify-content: center;
+    align-items: center;
+
+}
+.tail h3{
+    display: flex;
+    justify-content: center;
+}
+.display{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.tail .feed-1 {
+    width: 300px;
+    height: 200px;    
+}
+.tail .feed-2{
+    width: 300px;
+    height: 200px;
+}
+.tail .feed-3{
+    width: 300px;
+    height: 200px;
+}
+
+/*------end-card----------*/
+
+.end-card{
+    display: flex;
+    margin-top: 50px;
+    background-color:rgba(0,0,0,0.2) ;
+    padding: 50px;
+    margin-top: 0px;
+}
+.end-card .name{
+    color: black;
+    font-weight: 700;
+    margin-left: 100px;
+    flex-basis: 30%;
+}
+.end-tags{
+
+    display: flex;
+    
+    flex-basis: 60%;
+}
+.end-tags div a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;  
+}
